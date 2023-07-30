@@ -45,4 +45,11 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-ahahha
+
+## My refs
+
+[Attribute for in react](https://timmousk.com/blog/react-label-for/)
+
+[Flex box guide](https://origamid.com/projetos/flexbox-guia-completo/)
+
+[Menu hamburguer](https://vidafullstack.com.br/html/como-criar-um-menu-hamburguer-com-html-e-css/)
