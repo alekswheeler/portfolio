@@ -59,7 +59,13 @@
   @media (min-width: 800px) {
     display: none;
   }
-  transition: 0.3s ease-in-out;
+  height: 100%;
+}
+
+.dropdown {
+  display: flex;
+  overflow: hidden;
+  transition: height 0.4s;
 }
 
 .nav-hamburguer {

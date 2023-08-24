@@ -59,9 +59,12 @@ function App(this: any) {
 
           {/* Esse condicional no style atrapalha a responsividade */}
           <div
-            {...(menuIsOpen
-              ? { style: { display: "block" } }
-              : { style: { display: "none" } })}
+            className="dropdown"
+            {...{
+              style: {
+                height: menuIsOpen ? "100px" : "0",
+              },
+            }}
           >
             <div className="dropdown-menu">
               {menuItems.map((item) => {
