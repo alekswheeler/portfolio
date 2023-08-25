@@ -56,3 +56,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 https://www.hostinger.com/tutorials/web-developer-portfolio
 https://github.com/jigar-sable/Portfolio-Website
+
+https://miro.medium.com/v2/resize:fit:1400/1*fcmN0s4kCuMGx4GpDK73Xw.png
