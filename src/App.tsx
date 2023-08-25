@@ -15,8 +15,6 @@ function App(this: any) {
   const menuItems = ["About me", "Projects", "Certificates", "Contact"];
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
-  const myRef = useRef(null);
-
   const getRepo = async () =>
     await fetch("https://api.github.com/users/alekswheeler", {
       method: "GET",
@@ -41,7 +39,7 @@ function App(this: any) {
                 );
               })}
             </div>
-            <div className="container">
+            <div className="menu-hamburguer">
               <div className="nav-hamburguer">
                 <input
                   type="checkbox"
@@ -57,7 +55,6 @@ function App(this: any) {
             </div>
           </nav>
 
-          {/* Esse condicional no style atrapalha a responsividade */}
           <div
             className="dropdown"
             {...{
@@ -76,12 +73,22 @@ function App(this: any) {
               })}
             </div>
           </div>
-          {/* separator */}
-          <div className="intro-section">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
-            </p>
+
+          {/* Seção de boas vindas */}
+          <div className="container-flex intro-section">
+            <div className="intro-text">
+              <h1>
+                Hi, I'm <span>Aleks Wheeler</span>
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptatum, quibusdam, quia, quae voluptate quas
+                voluptatibus
+              </p>
+            </div>
+            <div className="container-flex profile-img">
+              <img src="https://github.com/alekswheeler.png" alt="" />
+            </div>
           </div>
         </div>
       </header>

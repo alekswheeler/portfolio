@@ -1,9 +1,24 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  min-width: 375px;
+}
+
+.container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .header-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  background-color: #f2f2f2;
   margin-bottom: 100px;
 }
 
@@ -19,9 +34,10 @@
 .navbox {
   display: flex;
   align-items: center;
-  padding: 10px;
+  justify-content: space-around;
   background-color: #c9a5f8;
   width: 80%;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
@@ -31,7 +47,6 @@
   justify-content: end;
   padding: 8px;
   gap: 32px;
-  /* width: 100%; */
   flex-grow: 2;
 
   @media (max-width: 800px) {
@@ -39,7 +54,7 @@
   }
 }
 
-.container {
+.menu-hamburguer {
   display: none;
   height: 100%;
   align-items: end;
@@ -63,6 +78,7 @@
 }
 
 .dropdown {
+  margin-top: 16px;
   display: flex;
   overflow: hidden;
   transition: height 0.4s;
@@ -130,12 +146,28 @@
 }
 
 .intro-section {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.intro-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  /* background-color: #652e85cf; */
-  padding: 10px;
-  width: 80%;
+  align-items: center;
+  padding: 22px;
+  width: 400px;
+}
+
+.profile-img {
+  align-items: center;
+}
+
+.profile-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
 }
 
 .test {
