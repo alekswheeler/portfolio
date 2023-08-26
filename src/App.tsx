@@ -14,6 +14,26 @@ function App(this: any) {
 
   const menuItems = ["About me", "Projects", "Certificates", "Contact"];
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const headerRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    setScrollPosition(window.scrollY);
+
+    const header = headerRef.current;
+
+    window.addEventListener("scroll", () => {
+      if (header) {
+        if (scrollPosition > window.scrollY) {
+          header.style.top = "0px";
+        } else {
+          header.style.top = "-90px";
+        }
+      }
+      setScrollPosition(window.scrollY);
+    });
+  }, [scrollPosition]);
 
   const getRepo = async () =>
     await fetch("https://api.github.com/users/alekswheeler", {
@@ -24,7 +44,7 @@ function App(this: any) {
 
   return (
     <div>
-      <header>
+      <header ref={headerRef}>
         <div className="header-box">
           <nav className="navbox">
             <div className="site-icon">
@@ -59,7 +79,7 @@ function App(this: any) {
             className="dropdown"
             {...{
               style: {
-                height: menuIsOpen ? "100px" : "0",
+                height: menuIsOpen ? "138px" : "0",
               },
             }}
           >
@@ -73,26 +93,24 @@ function App(this: any) {
               })}
             </div>
           </div>
-
-          {/* Seção de boas vindas */}
-          <div className="container-flex intro-section">
-            <div className="intro-text">
-              <h1>
-                Hi, I'm <span>Aleks Wheeler</span>
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam voluptatum, quibusdam, quia, quae voluptate quas
-                voluptatibus
-              </p>
-            </div>
-            <div className="container-flex profile-img">
-              <img src="https://github.com/alekswheeler.png" alt="" />
-            </div>
-          </div>
         </div>
       </header>
       <main>
+        {/* Seção de boas vindas */}
+        <div className="container-flex intro-section">
+          <div className="intro-text">
+            <h1>
+              Hi, I'm <span>Aleks Wheeler</span>
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
+            </p>
+          </div>
+          <div className="container-flex profile-img">
+            <img src="https://github.com/alekswheeler.png" alt="" />
+          </div>
+        </div>
         {/* Aboute me section */}
         <section id="about-me">
           <h2>About me</h2>
@@ -121,6 +139,49 @@ function App(this: any) {
           </div>
         </section>
         {/* Contact section */}
+        <section id="contact">
+          <h2>Contact</h2>
+          <div className="text-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
+          </div>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <div className="text-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
+          </div>
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          <div className="text-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
+          </div>
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          <div className="text-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
+          </div>
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          <div className="text-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
+          </div>
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          <div className="text-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
+          </div>
+        </section>
         <section id="contact">
           <h2>Contact</h2>
           <div className="text-box">
