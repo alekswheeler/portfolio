@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./index.css";
+import { ProjectCard } from "./components/ProjectCard";
 
 function App(this: any) {
   //ReposURL: https://api.github.com/users/alekswheeler/repos
@@ -120,10 +121,48 @@ function App(this: any) {
           </div>
         </section>
         {/* Projects section */}
-        <section id="projects">
+        <section className="container-flex" id="projects">
           <h2>Projects</h2>
-          <div>
-            <button onClick={() => getRepo()}>Get Repo</button>
+
+          <div className="text-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
+          </div>
+
+          <div className="container-flex projects">
+            <ProjectCard
+              title={"cash-me"}
+              description={
+                "Projeto nodejs backend para transferência de valores entre os usuários. É possível fazer login, fornecendo username e password e visualizar o seu próprio saldo."
+              }
+              tecnologies={["nodejs", "docker", "postgres"]}
+              image={""}
+              subtitle={"Backend"}
+              sourceCodeLink={"https://github.com/alekswheeler/cash-me"}
+              liveLink={""}
+            />
+            <ProjectCard
+              title={"Todo List API"}
+              description={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, quia, quae voluptate quas voluptatibus"
+              }
+              tecnologies={["typescript", "react"]}
+              image={""}
+              subtitle={"Backend"}
+              sourceCodeLink={"https://github.com/alekswheeler"}
+              liveLink={"https://github.com/alekswheeler"}
+            />
+            <ProjectCard
+              title={"Todo List API"}
+              description={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, quia, quae voluptate quas voluptatibus"
+              }
+              tecnologies={["aws", "nodejs"]}
+              image={""}
+              subtitle={"Backend"}
+              sourceCodeLink={"https://github.com/alekswheeler"}
+              liveLink={"https://github.com/alekswheeler"}
+            />
           </div>
           <div className="text-box">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -168,28 +207,30 @@ function App(this: any) {
             voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
           </div>
         </section>
-        <section id="contact">
-          <h2>Contact</h2>
-          <div className="text-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
-          </div>
-        </section>
-        <section id="contact">
-          <h2>Contact</h2>
-          <div className="text-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
-          </div>
-        </section>
-        <section id="contact">
-          <h2>Contact</h2>
-          <div className="text-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
-          </div>
-        </section>
       </main>
+
+      <footer className="container-flex">
+        <div className="container-flex footer-box">
+          <div className="footer-box-item">
+            <h3>alekswheeler</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            </p>
+          </div>
+          <div className="footer-box-item">
+            <h3>alekswheeler</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            </p>
+          </div>
+          <div className="footer-box-item">
+            <h3>alekswheeler</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
