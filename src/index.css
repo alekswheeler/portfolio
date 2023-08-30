@@ -303,17 +303,42 @@ section {
 }
 
 footer {
-  background-color: #d3d2d5;
-  width: 100%;
+  background-color: #299481;
 }
 
 .footer-box {
-  justify-content: space-around;
-  height: 100px;
+  justify-content: space-between;
   padding: 16px;
   width: 100%;
+  gap: 32px;
 }
 
 .footer-box-item {
-  background-color: red;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 124px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.quick-links {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.quick-links h3 {
+  margin-bottom: 8px;
+}
+
+.footer-box-item-socials {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-box-item-socials img {
+  max-width: 32px;
+  max-height: 32px;
 }

@@ -116,8 +116,37 @@ function App(this: any) {
         <section id="about-me">
           <h2>About me</h2>
           <div className="text-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
+            Estou no 7º período de graduação em Ciência da Computação pela
+            Universidade Federal do Espírito Santo. Também faço parte de uma
+            empresa Júnior de tecnologia há cerca de dois anos onde atuo no
+            desenvolvimento de Sistemas Web para clientes que chegam até a
+            empresa. Entre os projetos que participei gosto de destacar um
+            sistema de gestão de processos para uma empresa de médio porte
+            atuando em dois estados diferentes. Minha atuação neste projeto foi
+            desenvolver a API responsável por fazer com que as regras de negócio
+            funcionem no sistema. Para isto, utilizei NodeJs para o backend e
+            Typescript. Como foi um sistema Web, a escolha de cloud foi AWS.
+            Para subir a infraestrutura a escolha foi o framework Serverless.
+            Para o banco de dados a solução escolhida foi o DynamoDB o NOSQl da
+            própria AWS. Com uma equipe reduzida, participei com gerente e
+            principal desenvolvedor da API no Backend, ou seja, projetei a
+            arquitetura, desenvolvi o modelo de dados e ainda tive contato com
+            os clientes fornecendo feedbacks e colhendo requisitos para o
+            desenvolvimento do sistema. Um outro ponto que gosto de destacar é
+            que o frontend foi desenvolvido por outro desenvolvedor então o
+            trabalho em equipe foi crucial para que a entrega do sistema não
+            desse erro e tudo funcionasse de maneira adequada. Pude exercitar a
+            confecção de documentação para o uso da API e também para futuros
+            devs que venham a ter contato com este projeto. O meu foco é em
+            desenvolvimento backend, mas não tenho problemas com desenvolvimento
+            frontend, por conta das demandas da empresa Júnior também participo
+            de treinamentos para o frontend e projetos de front. No geral as
+            tecnologias usadas são da família do Javascript. Mas já tive contato
+            com outras linguagens em projetos para as matérias da faculdade como
+            C, Java e Python. Mesmo sem um conhecimento aprofundado nessas
+            linguagens, tenho aptidão a aprendê-las pois os fundamentos em
+            lógica de programação são exercitados constantemente na rotina da
+            Universidade.
           </div>
         </section>
         {/* Projects section */}
@@ -125,8 +154,8 @@ function App(this: any) {
           <h2>Projects</h2>
 
           <div className="text-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
+            Aqui você pode ver alguns dos meus projetos pessoais e também os
+            repositórios de código fonte de cada um deles.
           </div>
 
           <div className="container-flex projects">
@@ -211,20 +240,33 @@ function App(this: any) {
 
       <footer className="container-flex">
         <div className="container-flex footer-box">
-          <div className="footer-box-item">
-            <h3>alekswheeler</h3>
+          <div className="container-flex footer-box-item">
+            <h3>aleks wheeler's portfolio</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              Thank you for visiting my personal portfolio website. Connect with
+              me over socials.
             </p>
           </div>
-          <div className="footer-box-item">
-            <h3>alekswheeler</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            </p>
+          <div className="container-flex footer-box-item">
+            <div className="container-flex quick-links">
+              <h3>Quick links</h3>
+              {menuItems.map((item) => {
+                return (
+                  <div className="nav-item" key={item}>
+                    <a href="#about-me">{item}</a>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-          <div className="footer-box-item">
-            <h3>alekswheeler</h3>
+          <div className="container-flex footer-box-item">
+            <h3>Contact Info</h3>
+            <div className="container-flex footer-box-item-socials">
+              <img src="/github.png" alt="" />
+              <img src="/linkedin.png" alt="" />
+              <img src="/o-email.png" alt="" />
+              <img src="/telegrama.png" alt="" />
+            </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             </p>
