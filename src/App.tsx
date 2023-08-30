@@ -97,8 +97,9 @@ function App(this: any) {
               Hi, I'm <span>Aleks Wheeler</span>
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
+              Bacharel em Ciência da Computação. Graduação com complementação de
+              matérias voltadas à Engenharia de Software e desenvolvedor
+              fullstack.
             </p>
           </div>
           <div className="container-flex profile-img">
@@ -109,37 +110,12 @@ function App(this: any) {
         <section id="About me">
           <h2>About me</h2>
           <div className="text-box">
-            Estou no 7º período de graduação em Ciência da Computação pela
-            Universidade Federal do Espírito Santo. Também faço parte de uma
-            empresa Júnior de tecnologia há cerca de dois anos onde atuo no
-            desenvolvimento de Sistemas Web para clientes que chegam até a
-            empresa. Entre os projetos que participei gosto de destacar um
-            sistema de gestão de processos para uma empresa de médio porte
-            atuando em dois estados diferentes. Minha atuação neste projeto foi
-            desenvolver a API responsável por fazer com que as regras de negócio
-            funcionem no sistema. Para isto, utilizei NodeJs para o backend e
-            Typescript. Como foi um sistema Web, a escolha de cloud foi AWS.
-            Para subir a infraestrutura a escolha foi o framework Serverless.
-            Para o banco de dados a solução escolhida foi o DynamoDB o NOSQl da
-            própria AWS. Com uma equipe reduzida, participei com gerente e
-            principal desenvolvedor da API no Backend, ou seja, projetei a
-            arquitetura, desenvolvi o modelo de dados e ainda tive contato com
-            os clientes fornecendo feedbacks e colhendo requisitos para o
-            desenvolvimento do sistema. Um outro ponto que gosto de destacar é
-            que o frontend foi desenvolvido por outro desenvolvedor então o
-            trabalho em equipe foi crucial para que a entrega do sistema não
-            desse erro e tudo funcionasse de maneira adequada. Pude exercitar a
-            confecção de documentação para o uso da API e também para futuros
-            devs que venham a ter contato com este projeto. O meu foco é em
-            desenvolvimento backend, mas não tenho problemas com desenvolvimento
-            frontend, por conta das demandas da empresa Júnior também participo
-            de treinamentos para o frontend e projetos de front. No geral as
-            tecnologias usadas são da família do Javascript. Mas já tive contato
-            com outras linguagens em projetos para as matérias da faculdade como
-            C, Java e Python. Mesmo sem um conhecimento aprofundado nessas
-            linguagens, tenho aptidão a aprendê-las pois os fundamentos em
-            lógica de programação são exercitados constantemente na rotina da
-            Universidade.
+            Noções em desenvolvimento Ágil Conhecimento aprofundado em lógica de
+            programação. Conhecimento aprofundado em algoritmos computacionais.
+            Conhecimentos em linguagens de programação (C, C++, JAVA,
+            Javascript, Typescript). Conhecimentos em Bancos de dados (MySQL,
+            PotstgreSQL). Conhecimento aprofundado em API REST com nodejs e
+            typescript.
           </div>
         </section>
         {/* Projects section */}
@@ -220,7 +196,7 @@ function App(this: any) {
               {menuItems.map((item) => {
                 return (
                   <div className="nav-item" key={item}>
-                    <a href="#about-me">{item}</a>
+                    <a href={`#${item}`}>{item}</a>
                   </div>
                 );
               })}
@@ -229,10 +205,36 @@ function App(this: any) {
           <div className="container-flex footer-box-item">
             <h3>Contact Info</h3>
             <div className="container-flex footer-box-item-socials">
-              <img src="/github.png" alt="" />
-              <img src="/linkedin.png" alt="" />
-              <img src="/o-email.png" alt="" />
-              <img src="/telegrama.png" alt="" />
+              <a
+                href="https://github.com/alekswheeler"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/github.png" alt="" />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/alekswheeler/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/linkedin.png" alt="" />
+              </a>
+
+              <a
+                href="mailto:alexsktns1331@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/o-email.png" alt="" />
+              </a>
+              <a
+                href="https://t.me/alekswheeler"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/telegrama.png" alt="" />
+              </a>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
