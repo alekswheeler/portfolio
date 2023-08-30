@@ -42,14 +42,20 @@ const ProjectCard = (props: ProjectCardProps) => {
 
   return (
     <div className="container-flex project-card">
-      <section>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <span className="project-card-title">
           <strong>{props.title}</strong>
         </span>
         <span className="project-card-subtitle">
           <i>{props.subtitle}</i>
         </span>
-      </section>
+      </div>
 
       <div className="project-card-badges">
         {props.tecnologies.map((tecnology) => {

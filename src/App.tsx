@@ -29,19 +29,12 @@ function App(this: any) {
         if (scrollPosition > window.scrollY) {
           header.style.top = "0px";
         } else {
-          header.style.top = "-90px";
+          header.style.top = "-228px";
         }
       }
       setScrollPosition(window.scrollY);
     });
   }, [scrollPosition]);
-
-  const getRepo = async () =>
-    await fetch("https://api.github.com/users/alekswheeler", {
-      method: "GET",
-    })
-      .then((data) => data.json().then((data) => console.log(data)))
-      .catch((err) => console.log(err));
 
   return (
     <div>
@@ -55,7 +48,7 @@ function App(this: any) {
               {menuItems.map((item) => {
                 return (
                   <div className="nav-item" key={item}>
-                    <a href="#about-me">{item}</a>
+                    <a href={`#${item}`}>{item}</a>
                   </div>
                 );
               })}
@@ -88,7 +81,7 @@ function App(this: any) {
               {menuItems.map((item) => {
                 return (
                   <div className="nav-item" key={item}>
-                    <a href="#about-me">{item}</a>
+                    <a href={`#${item}`}>{item}</a>
                   </div>
                 );
               })}
@@ -113,7 +106,7 @@ function App(this: any) {
           </div>
         </div>
         {/* Aboute me section */}
-        <section id="about-me">
+        <section id="About me">
           <h2>About me</h2>
           <div className="text-box">
             Estou no 7º período de graduação em Ciência da Computação pela
@@ -150,7 +143,7 @@ function App(this: any) {
           </div>
         </section>
         {/* Projects section */}
-        <section className="container-flex" id="projects">
+        <section className="container-flex" id="Projects">
           <h2>Projects</h2>
 
           <div className="text-box">
@@ -193,13 +186,9 @@ function App(this: any) {
               liveLink={"https://github.com/alekswheeler"}
             />
           </div>
-          <div className="text-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
-          </div>
         </section>
         {/* Certificates section */}
-        <section id="certificates">
+        <section id="Certificates">
           <h2>Certificates</h2>
           <div className="text-box">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -207,28 +196,6 @@ function App(this: any) {
           </div>
         </section>
         {/* Contact section */}
-        <section id="contact">
-          <h2>Contact</h2>
-          <div className="text-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
-          </div>
-        </section>
-
-        <section id="contact">
-          <h2>Contact</h2>
-          <div className="text-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
-          </div>
-        </section>
-        <section id="contact">
-          <h2>Contact</h2>
-          <div className="text-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
-          </div>
-        </section>
         <section id="contact">
           <h2>Contact</h2>
           <div className="text-box">
