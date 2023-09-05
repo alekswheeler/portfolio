@@ -210,7 +210,7 @@ function App(this: any) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/github.png" alt="" />
+                <img src={process.env.PUBLIC_URL + "/github.png"} alt="" />
               </a>
 
               <a
@@ -218,7 +218,7 @@ function App(this: any) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/linkedin.png" alt="" />
+                <img src={process.env.PUBLIC_URL + "/linkedin.png"} alt="" />
               </a>
 
               <a
@@ -226,14 +226,14 @@ function App(this: any) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/o-email.png" alt="" />
+                <img src={process.env.PUBLIC_URL + "/o-email.png"} alt="" />
               </a>
               <a
                 href="https://t.me/alekswheeler"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/telegrama.png" alt="" />
+                <img src={process.env.PUBLIC_URL + "/telegrama.png"} alt="" />
               </a>
             </div>
             <p>
