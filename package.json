@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "BUILD_PATH='./dist' react-scripts build",
+    "predeploy": "BUILD_PATH='./dist' react-scripts build",
     "deploy": "gh-pages -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
