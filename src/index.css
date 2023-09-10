@@ -97,6 +97,9 @@ header {
   width: 100%;
   background-color: #f0f0f0c7;
   overflow: hidden;
+  @media (min-width: 800px) {
+    display: none;
+  }
 }
 
 .nav-hamburguer {
