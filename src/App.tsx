@@ -41,8 +41,8 @@ function App(this: any) {
       <header ref={headerRef}>
         <div className="header-box">
           <nav className="navbox">
-            <div className="site-icon">
-              <a href="_self">alekswheeler</a>
+            <div className="site-icon" id="siteicon">
+              <a href={process.env.PUBLIC_URL} target="_top" >alekswheeler</a>
             </div>
             <div className="navbar">
               {menuItems.map((item) => {
