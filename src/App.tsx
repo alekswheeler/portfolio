@@ -97,9 +97,9 @@ function App(this: any) {
               Hi, I'm <span>Aleks Wheeler</span>
             </h1>
             <p>
-              Bacharel em Ciência da Computação. Graduação com complementação de
-              matérias voltadas à Engenharia de Software e desenvolvedor
-              fullstack.
+              Desenvolvedor fullstack, apaixonado por tecnologia e programação.
+              Bacharel em Ciência da Computação pela Universidade Federal do Espiríto Santo.
+              Diretor de projetos de tecnologia na empresa júnior de computação da UFES.
             </p>
           </div>
           <div className="container-flex profile-img">
@@ -109,13 +109,38 @@ function App(this: any) {
         {/* Aboute me section */}
         <section id="About me">
           <h2>About me</h2>
-          <div className="text-box">
-            Noções em desenvolvimento Ágil Conhecimento aprofundado em lógica de
-            programação. Conhecimento aprofundado em algoritmos computacionais.
-            Conhecimentos em linguagens de programação (C, C++, JAVA,
-            Javascript, Typescript). Conhecimentos em Bancos de dados (MySQL,
-            PotstgreSQL). Conhecimento aprofundado em API REST com nodejs e
-            typescript.
+          <div className="text-box list">
+
+            <p>
+            <b>Noções em Desenvolvimento Ágil</b>
+            <br/>
+            Minha familiaridade com metodologias ágeis de desenvolvimento, como Scrum e Kanban, me ajudou a trabalhar de forma eficaz em equipes dinâmicas e a entregar resultados consistentes de maneira iterativa.
+            </p>
+            <p>
+            <b>Conhecimento Aprofundado em Lógica de Programação</b>
+            <br/>
+A lógica de programação é o alicerce de todas as minhas habilidades técnicas. Minha capacidade de pensar logicamente me permite resolver problemas de maneira eficaz e criar soluções robustas.
+            </p>
+            <p>
+            <b>Conhecimento Aprofundado em Algoritmos Computacionais</b>
+            <br/>
+Meu domínio dos algoritmos é um trunfo valioso para otimizar o desempenho de aplicativos e resolver desafios complexos de forma eficiente.
+            </p>
+            <p>
+            <b>Conhecimentos em Linguagens de Programação</b>
+            <br/>
+Minha experiência abrange uma variedade de linguagens, incluindo C, C++, Java, JavaScript e TypeScript. Isso me permite escolher a melhor ferramenta para cada tarefa e me adaptar rapidamente às necessidades do projeto. 
+            </p>
+            <p>
+            <b>Conhecimentos em Bancos de Dados</b>
+            <br/>
+Minha experiência abrange bancos de dados relacionais, como PostgreSQL, e bancos de dados não relacionais, como DynamoDB. Isso me permite projetar modelos de dados que atendam às necessidades específicas de cada projeto.
+            </p>
+            <p>
+            <b>Conhecimento Aprofundado em API REST com Node.js e TypeScript</b>
+            <br/>
+Minha proficiência em Node.js e TypeScript me capacita a desenvolver APIs REST robustas e escaláveis. Entendo a importância de criar interfaces de programação de aplicativos eficientes para a comunicação de diversos sistemas web.
+            </p>
           </div>
         </section>
         {/* Projects section */}
@@ -140,26 +165,48 @@ function App(this: any) {
               liveLink={""}
             />
             <ProjectCard
-              title={"Todo List API"}
+              title={"Website pessoal"}
               description={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, quia, quae voluptate quas voluptatibus"
+                "Minha página pessoal feita inteiramente em ReactJS (HTML, CSS) e TypeScript.Nenhum framework ou biblioteca além do react foi utilizado."
               }
               tecnologies={["typescript", "react"]}
               image={""}
-              subtitle={"Backend"}
-              sourceCodeLink={"https://github.com/alekswheeler"}
-              liveLink={"https://github.com/alekswheeler"}
+              subtitle={"Frontend"}
+              sourceCodeLink={"https://github.com/alekswheeler/portfolio"}
+              liveLink={"https://alekswheeler.github.io/portfolio/"}
             />
             <ProjectCard
-              title={"Todo List API"}
+              title={"Doar computadores"}
               description={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, quia, quae voluptate quas voluptatibus"
+                "Criar uma API para doação de computadores e aparelhos eletrônicos utilizando NodeJS. A APi fornece os serviços de registrar a doação e guardar esses dados"
               }
-              tecnologies={["aws", "nodejs"]}
+              tecnologies={["nodejs", "postgres"]}
               image={""}
               subtitle={"Backend"}
-              sourceCodeLink={"https://github.com/alekswheeler"}
-              liveLink={"https://github.com/alekswheeler"}
+              sourceCodeLink={"https://github.com/alekswheeler/doar-computadores"}
+              liveLink={""}
+            />
+            <ProjectCard
+              title={"Escalonamento de processos"}
+              description={
+                "Este trabalho tem por finalidade identificar se um escalonamento de transações é serializável ou não por meio do grafo de precedência, utilizando para isto o PostgreSQL."
+              }
+              tecnologies={["postgres"]}
+              image={""}
+              subtitle={"Bancos de Dados"}
+              sourceCodeLink={"https://github.com/alekswheeler/doar-computadores"}
+              liveLink={""}
+            />
+            <ProjectCard
+              title={"Vaccine Shell"}
+              description={
+                "Trabalho da disciplina de Sistemas Operacionais. O objetivo é criar um programa que simule o funcionamento de processos no SO Linux. Foram exercitados conceitos de threads e semáforos."
+              }
+              tecnologies={["C"]}
+              image={""}
+              subtitle={"Sistemas Operacionais"}
+              sourceCodeLink={"https://github.com/alekswheeler/Trabalho-de-Sistemas-Operacionais"}
+              liveLink={""}
             />
           </div>
         </section>

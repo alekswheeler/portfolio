@@ -12,6 +12,10 @@ const ProjectCard = (props: ProjectCardProps) => {
   const tecnologies = new Map();
 
   tecnologies.set(
+    "C",
+    "https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
+  );
+    tecnologies.set(
     "typescript",
     "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
   );

@@ -211,6 +211,17 @@ header {
   text-align: center;
   font-size: 16px;
   max-width: 60%;
+  line-height: 1.5;
+}
+
+.list {
+  text-align: justify;
+  display: block;
+}
+
+.list p > b {
+  font-weight: 700;
+  color: darkturquoise;
 }
 
 section {
