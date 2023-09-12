@@ -109,7 +109,7 @@ function App(this: any) {
         {/* Aboute me section */}
         <section id="About me">
           <h2>About me</h2>
-          <div className="text-box list">
+          <div className="text-box about-me">
 
             <p>
             <b>Noções em Desenvolvimento Ágil</b>
@@ -117,12 +117,12 @@ function App(this: any) {
             Minha familiaridade com metodologias ágeis de desenvolvimento, como Scrum e Kanban, me ajudou a trabalhar de forma eficaz em equipes dinâmicas e a entregar resultados consistentes de maneira iterativa.
             </p>
             <p>
-            <b>Conhecimento Aprofundado em Lógica de Programação</b>
+            <b>Amplo conhecimento em Lógica de Programação</b>
             <br/>
 A lógica de programação é o alicerce de todas as minhas habilidades técnicas. Minha capacidade de pensar logicamente me permite resolver problemas de maneira eficaz e criar soluções robustas.
             </p>
             <p>
-            <b>Conhecimento Aprofundado em Algoritmos Computacionais</b>
+            <b>Amplo conhecimento em Algoritmos Computacionais</b>
             <br/>
 Meu domínio dos algoritmos é um trunfo valioso para otimizar o desempenho de aplicativos e resolver desafios complexos de forma eficiente.
             </p>
@@ -167,7 +167,7 @@ Minha proficiência em Node.js e TypeScript me capacita a desenvolver APIs REST 
             <ProjectCard
               title={"Website pessoal"}
               description={
-                "Minha página pessoal feita inteiramente em ReactJS (HTML, CSS) e TypeScript.Nenhum framework ou biblioteca além do react foi utilizado."
+                "Minha página pessoal feita inteiramente em ReactJS (HTML, CSS) e TypeScript. Nenhum framework ou biblioteca além do react foi utilizado."
               }
               tecnologies={["typescript", "react"]}
               image={""}
@@ -213,17 +213,27 @@ Minha proficiência em Node.js e TypeScript me capacita a desenvolver APIs REST 
         {/* Certificates section */}
         <section id="Certificates">
           <h2>Certificates</h2>
-          <div className="text-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
+          <div className="text-box certificates">
+            <ul>
+              <li>
+                Lei Geral de Proteção de Dados Pessoais (LGPD) - Bradesco Escola Virtual
+              </li>
+              <li>
+                Full HTTP Networking Course - Free Code Camp
+              </li>
+            </ul>
           </div>
         </section>
         {/* Contact section */}
         <section id="contact">
           <h2>Contact</h2>
           <div className="text-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, quia, quae voluptate quas voluptatibus
+              <i>
+                Em construção...
+              </i> 
+              <p> 
+                Veja abaixo informações de contato detalhadas
+              </p>
           </div>
         </section>
       </main>

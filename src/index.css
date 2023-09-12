@@ -214,12 +214,13 @@ header {
   line-height: 1.5;
 }
 
-.list {
+.about-me {
   text-align: justify;
   display: block;
+  max-width: 60%;
 }
 
-.list p > b {
+.about-me p > b {
   font-weight: 700;
   color: darkturquoise;
 }
@@ -326,6 +327,13 @@ section h2 {
 .card-buttom-disabled:hover {
   cursor: not-allowed;
 }
+
+
+.certificates li{
+  list-style: square;
+  text-align: left;
+}
+
 
 footer {
   background-color: #299481;
