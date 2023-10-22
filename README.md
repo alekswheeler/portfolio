@@ -1,4 +1,4 @@
-[en]
+🇺🇸 [en]
 # My website portfolio
 
 I made this project with [Create React App](https://github.com/facebook/create-react-app). My idea is to expose my projects in an simple way for other people while at the same time practicing in a project using only HTML and CSS. Because React is a framework where we can combine HTML, CSS and JS into a powerful and flexible tool. I used some refs you can see bellow.
@@ -52,7 +52,7 @@ With react we can generate all static files that represents our project so I jus
 
 ---
 
-[pt]
+🇧🇷 [pt]
 
 # Meu portfólio de website
 
