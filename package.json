@@ -17,7 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
+    "dev": "react-scripts start",
     "predeploy": "BUILD_PATH='./dist' react-scripts build",
     "deploy": "gh-pages -d dist",
     "test": "react-scripts test",

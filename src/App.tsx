@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import './index.css'
 import { ProjectCard } from './components/ProjectCard'
 
-function App(this: any) {
+function App(this: unknown) {
   // ReposURL: https://api.github.com/users/alekswheeler/repos
 
   /**
@@ -13,7 +13,7 @@ function App(this: any) {
    *
    */
 
-  const menuItems = ['About me', 'Projects', 'Certificates', 'Contact']
+  const menuItems = ['About me', 'Projects', 'Blog', 'Certificates', 'Contact']
   const [menuIsOpen, setMenuIsOpen] = useState(false)
   const [scrollPosition, setScrollPosition] = useState(0)
 
@@ -50,7 +50,23 @@ function App(this: any) {
               {menuItems.map((item) => {
                 return (
                   <div className="nav-item" key={item}>
-                    <a href={`#${item}`}>{item}</a>
+                    <a
+                      href={
+                        item.toLowerCase() === 'blog'
+                          ? 'https://dev.to/alekswheeler'
+                          : `#${item.toLowerCase().replace(/\s+/g, '-')}`
+                      }
+                      target={
+                        item.toLowerCase() === 'blog' ? '_blank' : undefined
+                      }
+                      rel={
+                        item.toLowerCase() === 'blog'
+                          ? 'noopener noreferrer'
+                          : undefined
+                      }
+                    >
+                      {item}
+                    </a>
                   </div>
                 )
               })}
@@ -99,10 +115,11 @@ function App(this: any) {
               Hi, I&apos;m <span>Aleks Wheeler</span>
             </h1>
             <p>
-              Desenvolvedor fullstack, apaixonado por tecnologia e programação.
-              Bacharel em Ciência da Computação pela Universidade Federal do
-              Espiríto Santo. Diretor de projetos de tecnologia na empresa
-              júnior de computação da UFES.
+              Desenvolvedor fullstack com experiência em C#, Java e bancos de
+              dados SQL (SSMS). Bacharel em Ciência da Computação pela UFES, com
+              vivência em liderança de projetos como ex-diretor de tecnologia na
+              empresa júnior de computação da universidade. Gosto de desafios,
+              tenho foco em organização, comunicação e evolução contínua.
             </p>
           </div>
           <div className="container-flex profile-img">
@@ -274,7 +291,23 @@ function App(this: any) {
               {menuItems.map((item) => {
                 return (
                   <div className="nav-item" key={item}>
-                    <a href={`#${item}`}>{item}</a>
+                    <a
+                      href={
+                        item.toLowerCase() === 'blog'
+                          ? 'https://dev.to/alekswheeler'
+                          : `#${item.toLowerCase().replace(/\s+/g, '-')}`
+                      }
+                      target={
+                        item.toLowerCase() === 'blog' ? '_blank' : undefined
+                      }
+                      rel={
+                        item.toLowerCase() === 'blog'
+                          ? 'noopener noreferrer'
+                          : undefined
+                      }
+                    >
+                      {item}
+                    </a>
                   </div>
                 )
               })}
