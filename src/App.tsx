@@ -255,6 +255,17 @@ function App(this: unknown) {
               }
               liveLink={''}
             />
+            <ProjectCard
+              title={'ai practices lab'}
+              description={
+                'Academic and personal experiments in Machine Learning: AutoDiff, Neural Networks, Clustering, and Data Analysis. (Jupyter/Colab Notebooks)'
+              }
+              tecnologies={['C']}
+              image={''}
+              subtitle={'Machine learning / ai'}
+              sourceCodeLink={'https://github.com/alekswheeler/ai-practices'}
+              liveLink={''}
+            />
           </div>
         </section>
         {/* Certificates section */}
