@@ -115,11 +115,15 @@ function App(this: unknown) {
               Hi, I&apos;m <span>Aleks Wheeler</span>
             </h1>
             <p>
-              Desenvolvedor fullstack com experiência em C#, Java e bancos de
-              dados SQL (SSMS). Bacharel em Ciência da Computação pela UFES, com
-              vivência em liderança de projetos como ex-diretor de tecnologia na
-              empresa júnior de computação da universidade. Gosto de desafios,
-              tenho foco em organização, comunicação e evolução contínua.
+              Desenvolvedor full stack com experiência em C#, Java e bancos de
+              dados SQL. Graduando em Ciência da Computação pela UFES, com
+              vivência em liderança de projetos como Diretor de Tecnologia na
+              empresa júnior de computação. Tenho facilidade para aprender novas
+              tecnologias, sou organizado, comunicativo e busco evolução
+              contínua. Gosto de resolver problemas com soluções práticas que
+              gerem valor real aos usuários e ao negócio. Atualmente, também
+              estou me aprofundando em Machine Learning e Data Science, com
+              projetos e estudos aplicados em Python e análise de dados.
             </p>
           </div>
           <div className="container-flex profile-img">
