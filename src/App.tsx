@@ -260,7 +260,7 @@ function App(this: unknown) {
               description={
                 'Academic and personal experiments in Machine Learning: AutoDiff, Neural Networks, Clustering, and Data Analysis. (Jupyter/Colab Notebooks)'
               }
-              tecnologies={['C']}
+              tecnologies={['python']}
               image={''}
               subtitle={'Machine learning / ai'}
               sourceCodeLink={'https://github.com/alekswheeler/ai-practices'}

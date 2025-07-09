@@ -43,6 +43,10 @@ const ProjectCard = (props: ProjectCardProps) => {
     'nextjs',
     'https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white',
   )
+  tecnologies.set(
+    'python',
+    'https://img.shields.io/badge/python-white?style=for-the-badge&logo=python',
+  )
 
   return (
     <div className="container-flex project-card">
